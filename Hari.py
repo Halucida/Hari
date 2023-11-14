@@ -149,7 +149,6 @@ tflite_model = Tensolite(model_path, optm=optm, filename="normal_model")
 
 round(filemega("/content/normal_model.tflite"), 3)
 
-"""```py
 dataset = tf.data.Dataset
 
 train_image, train_label = next(iter(train))
@@ -185,5 +184,3 @@ tflite_model_file = pathlib.Path("quant_lite.tflite")
 tflite_model_file.write_bytes(tflite_model_quant)
 
 round(filemega("/content/quant_lite.tflite"), 3)
-```
-"""
